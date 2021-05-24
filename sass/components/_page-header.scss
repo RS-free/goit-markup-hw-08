@@ -3,8 +3,8 @@
 }
 
 .header {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
 }
 
 .logo {
@@ -25,7 +25,7 @@
 }
 
 .header-nav--list {
-  display: flex;
+  // display: flex;
 
   & .header-item:not(:last-child) {
     margin-right: var(--margin);
@@ -67,8 +67,8 @@
 }
 
 .contact-header {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
   margin-left: auto;
 
   & .header-item + .header-item {
