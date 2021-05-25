@@ -5,6 +5,16 @@
 .header {
   // display: flex;
   // align-items: center;
+
+  @media screen and(min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and(min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .logo {
@@ -21,11 +31,25 @@
 }
 
 .header--nav {
-  margin-left: 93px;
+  @media screen and(min-width: 768px) {
+    margin-left: 88px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 
 .header-nav--list {
   // display: flex;
+
+  @media screen and(min-width: 768px) {
+    display: flex;
+  }
+
+  @media screen and(min-width: 1200px) {
+    display: flex;
+  }
 
   & .header-item:not(:last-child) {
     margin-right: var(--margin);
@@ -69,10 +93,26 @@
 .contact-header {
   // display: flex;
   // align-items: center;
-  margin-left: auto;
+  margin-left: var(--margin);
 
-  & .header-item + .header-item {
-    margin-left: var(--margin);
+  @media screen and(min-width: 768px) {
+    @media screen and(max-width: 1199px) {
+      display: flex;
+      flex-direction: column;
+      margin-left: 65px;
+    }
+  }
+
+  @media screen and(min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  .header-item + .header-item {
+    @media screen and(min-width: 1200px) {
+      margin-left: var(--card-set-gap);
+    }
   }
 }
 
@@ -105,6 +145,11 @@
   letter-spacing: 0.02em;
   color: var(--additional-text-color);
   transition: color var(--timing-function);
+
+  @media screen and(min-width: 768px) {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 
   &:hover,
   &:focus {
