@@ -40,11 +40,16 @@
 
 .footer-shell {
   @media screen and(min-width: 480px) {
-    display: flex;
-    flex-wrap: wrap;
+    @media screen and(max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   @media screen and(min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
   }
 
@@ -62,15 +67,27 @@
     color: var(--title-text-color);
     margin-bottom: 20px;
     margin-top: 10px;
-    margin-left: 35px;
+
+    @media screen and(min-width: 480px) {
+      @media screen and(max-width: 767px) {
+        margin-top: 60px;
+      }
+    }
+
+    @media screen and(min-width: 1200px) {
+      margin-left: 35px;
+    }
   }
 }
 
 .social-icons-list {
   display: flex;
   background-color: inherit;
-  margin-left: 35px;
   color: var(--title-text-color);
+
+  @media screen and(min-width: 1200px) {
+    margin-left: 35px;
+  }
 
   & > .social-icons--item + .social-icons--item {
     margin-left: 10px;
@@ -131,13 +148,15 @@
 
 .block-send__title {
   @media screen and(min-width: 768px) {
-    // display: flex;
-    // flex-wrap: wrap;
+    @media screen and(max-width: 1199px) {
+      display: flex;
+      // flex-wrap: wrap;
+      flex-direction: column;
+    }
   }
 }
 
 .form-email {
-  width: 358px;
   height: 50px;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -149,13 +168,20 @@
   cursor: pointer;
   transition: border-color var(--timing-function);
 
+  @media screen and(min-width: 480px) {
+    width: 450px;
+  }
+
   @media screen and(min-width: 768px) {
     justify-content: center;
     margin-left: 0;
+    flex-direction: column;
+    width: 450px;
   }
 
   @media screen and(min-width: 1200px) {
     margin-left: 40px;
+    width: 358px;
   }
 
   &:hover,
@@ -198,8 +224,9 @@
   }
 
   @media screen and(min-width: 768px) {
-    margin-left: 12px;
-    margin-top: 0;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media screen and(min-width: 1200px) {
