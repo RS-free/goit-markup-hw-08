@@ -149,6 +149,19 @@
 }
 
 .team__item {
+  @media screen and(min-width: 320px) {
+    display: flex;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and(min-width: 320px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
   @media screen and(min-width: 480px) {
     display: flex;
     margin-left: 15px;
