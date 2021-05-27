@@ -121,4 +121,8 @@
   line-height: 1.36;
   text-transform: uppercase;
   letter-spacing: 0.06em;
+
+  @media screen and(min-width: 320px) and (max-width: 1199px) {
+    font-size: 26px;
+  }
 }
