@@ -1,11 +1,7 @@
 .portf-btn {
-  // display: flex;
-  // flex-wrap: wrap;
-
   @media screen and(min-width: 480px) {
     @media screen and(max-width: 767px) {
       display: flex;
-      // float: right;
       flex-wrap: wrap;
       padding-bottom: 40px;
     }
