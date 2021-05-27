@@ -115,6 +115,10 @@
   // align-items: center;
   margin-left: var(--margin);
 
+  @media screen and(min-width: 320px) and (max-width: 479px) {
+    display: none;
+  }
+
   @media screen and(min-width: 480px) and (max-width: 767px) {
     display: none;
   }
@@ -169,6 +173,10 @@
   letter-spacing: 0.02em;
   color: var(--additional-text-color);
   transition: color var(--timing-function);
+
+  @media screen and(min-width: 320px) and (max-width: 479px) {
+    display: none;
+  }
 
   @media screen and(min-width: 480px) and (max-width: 767px) {
     display: none;
