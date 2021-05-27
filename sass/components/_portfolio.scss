@@ -1,16 +1,22 @@
 .portf-btn {
   // display: flex;
   // flex-wrap: wrap;
+
   @media screen and(min-width: 480px) {
-    display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 40px;
+    @media screen and(max-width: 767px) {
+      display: flex;
+      flex-wrap: wrap;
+      // justify-content: center;
+      padding-bottom: 40px;
+    }
   }
 
   @media screen and(min-width: 768px) {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 36px;
+    @media screen and(max-width: 1199px) {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 36px;
+    }
   }
 
   @media screen and(min-width: 1200px) {
@@ -58,8 +64,6 @@
 }
 
 .portf-examples {
-  // display: flex;
-  // flex-wrap: wrap;
   margin-left: calc(-1 * var(--card-set-gap));
   margin-top: calc(-1 * var(--card-set-gap));
 

@@ -1,23 +1,84 @@
 .hero-section {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-color: var(--bgc-color);
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  outline: 1px solid black;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/00_герой.jpg");
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-size: cover;
+  @media screen and(min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: var(--bgc-color);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 1px solid black;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("/images/hero/hero_dsk.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url("/images/hero/hero_dsk@2x.jpg");
+    }
+  }
+
+  @media screen and(min-width: 768px) and (max-width: 1199px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-color: var(--bgc-color);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 1px solid black;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("/images/hero/hero_tab.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url("/images/hero/hero_tab@2x.jpg");
+    }
+  }
+
+  @media screen and(min-width: 480px) and (max-width: 767px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-color: var(--bgc-color);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 1px solid black;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("/images/hero/hero_mob.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url("/images/hero/hero_mob@2x.jpg");
+    }
+  }
 }
 
 .hero--title {
