@@ -292,8 +292,7 @@ body {
 }
 
 .container {
-  outline: 2px solid red;
-  width: 320px;
+  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin: 0;
