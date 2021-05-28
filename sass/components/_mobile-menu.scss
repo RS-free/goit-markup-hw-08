@@ -4,6 +4,16 @@
   border: none;
 }
 
+.menu-btn:hover,
+.menu-btn:focus {
+  fill: var(--accent-text-color);
+}
+
+.mobile-menu__close:hover,
+.mobile-menu__close:focus {
+  fill: var(--accent-text-color);
+}
+
 .mobile-menu {
   display: flex;
   flex-direction: column;

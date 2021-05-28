@@ -603,6 +603,16 @@ img {
   border: none;
 }
 
+.menu-btn:hover,
+.menu-btn:focus {
+  fill: var(--accent-text-color);
+}
+
+.mobile-menu__close:hover,
+.mobile-menu__close:focus {
+  fill: var(--accent-text-color);
+}
+
 .mobile-menu {
   display: flex;
   flex-direction: column;
@@ -1590,9 +1600,9 @@ img {
   transition: fill var(--timing-function);
 }
 
-.modal-btn-close:hover,
-.modal-btn-close :focus {
+.modal-btn-close:hover, .modal-btn-close:focus {
   fill: var(--accent-text-color);
+  border-color: var(--accent-text-color);
 }
 
 .close {
@@ -1669,6 +1679,20 @@ img {
   transition: border-color var(--timing-function);
 }
 
+.form-input:hover, .form-input:focus {
+  fill: var(--accent-text-color);
+  border-color: var(--accent-text-color);
+}
+
+.form-input:hover ~ .icon {
+  fill: var(--accent-text-color);
+}
+
+.form-input:focus ~ .icon {
+  fill: var(--accent-text-color);
+  border-color: var(--accent-text-color);
+}
+
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .form-input {
     width: 210px;
@@ -1679,18 +1703,6 @@ img {
   .form-input {
     width: 370px;
   }
-}
-
-.form-input:hover {
-  border-color: var(--accent-text-color);
-}
-
-.form-input:hover ~ .icon {
-  fill: var(--accent-text-color);
-}
-
-.form-input:focus ~ .icon {
-  fill: var(--accent-text-color);
 }
 
 .icon {
@@ -1735,8 +1747,8 @@ textarea {
   }
 }
 
-textarea:hover,
-textarea :focus {
+textarea:hover, textarea:focus {
+  fill: var(--accent-text-color);
   border-color: var(--accent-text-color);
 }
 
@@ -1751,6 +1763,11 @@ textarea :focus {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--additional-text-color);
+}
+
+.checkbox-label::after :hover, .checkbox-label:focus {
+  fill: var(--accent-text-color);
+  border-color: var(--accent-text-color);
 }
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
