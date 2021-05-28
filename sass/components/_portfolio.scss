@@ -3,7 +3,8 @@
     @media screen and(max-width: 767px) {
       display: flex;
       flex-wrap: wrap;
-      padding-bottom: 40px;
+      padding-bottom: 25px;
+      margin-right: 50px;
     }
   }
 
@@ -11,19 +12,19 @@
     @media screen and(max-width: 1199px) {
       display: flex;
       justify-content: center;
-      margin-bottom: 36px;
+      margin-bottom: 21px;
     }
   }
 
   @media screen and(min-width: 1200px) {
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
   }
 
-  & > .portf-btn--item + .portf-btn--item {
-    margin-left: 8px;
+  & > .portf-btn--item {
     margin-bottom: 15px;
+    padding-left: 8px;
   }
 }
 
