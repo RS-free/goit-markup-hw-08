@@ -581,14 +581,63 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .header-item--calm {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-item--calm {
+    font-size: 14px;
   }
 }
 
 .header-item--calm:hover, .header-item--calm:focus {
+  color: var(--accent-text-color);
+}
+
+.icon__tab {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  color: var(--icon-color);
+  background-color: var(--title-text-color);
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--additional-text-color);
+  transition: color var(--timing-function);
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .icon__tab {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .icon__tab {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .icon__tab {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    padding-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .icon__tab {
+    display: none;
+  }
+}
+
+.icon__tab:hover, .icon__tab:focus {
   color: var(--accent-text-color);
 }
 
@@ -623,7 +672,6 @@ img {
   top: 0;
   left: 50%;
   width: 100vw;
-  max-width: 480px;
   height: 100vh;
   padding: 48px 83px 48px 40px;
   background-color: var(--title-text-color);
@@ -869,9 +917,32 @@ img {
   }
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section.about {
